@@ -1,5 +1,7 @@
 require "rails_helper"
 
-describe "relationships" do
-  it {should have_many :rides}
+describe AmusementPark, type: :model do
+  describe "relationships" do
+    it {should have_many :rides}
+  end
 end
